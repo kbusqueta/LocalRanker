@@ -1,0 +1,7 @@
+{
+  "name": "G-Profile Manager",
+  "description": "Gestionnaire de fiches d'établissement Google Business Profile avec assistance IA.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
