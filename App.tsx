@@ -2,18 +2,18 @@ import React from 'react';
 
 const App: React.FC = () => {
   return (
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      height: '100vh', 
-      fontFamily: 'sans-serif',
-      backgroundColor: '#f0f9ff'
-    }}>
-      <div style={{ textAlign: 'center', padding: '2rem', background: 'white', borderRadius: '1rem', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
-        <h1 style={{ color: '#2563eb', marginBottom: '1rem' }}>Déploiement Réussi ! 🚀</h1>
-        <p style={{ color: '#4b5563' }}>Vercel fonctionne correctement.</p>
-        <p style={{ color: '#6b7280', fontSize: '0.9rem', marginTop: '0.5rem' }}>Nous pouvons maintenant réintégrer le code de l'application.</p>
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
+      <div className="bg-white p-8 rounded-xl shadow-lg max-w-md w-full text-center border border-green-200">
+        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span className="text-3xl">✅</span>
+        </div>
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">Application Active !</h1>
+        <p className="text-gray-600 mb-6">
+          La connexion avec Vercel est réparée. L'erreur 404 est résolue.
+        </p>
+        <div className="p-4 bg-blue-50 text-blue-800 text-sm rounded-lg border border-blue-100">
+          Prochaine étape : Demandez-moi de réintégrer le code de l'application (Dashboard, Posts, etc.).
+        </div>
       </div>
     </div>
   );
